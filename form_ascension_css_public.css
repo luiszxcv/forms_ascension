@@ -3,6 +3,7 @@
 .formbg-outer-ascension div,
 .formbg-outer-ascension span {
     font-family: Arial, Helvetica, sans-serif;
+    color: rgb(39, 39, 39) !important;
 }
 
 .formbg-outer-ascension p {
@@ -282,9 +283,9 @@
     min-height: 30px;
     font-family: Arial, Helvetica, sans-serif;
     border: unset;
-    border-radius: 4px;
+    border-radius: 4px !important;
     outline-color: #27D165;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255) 4px !important;
     box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
 }
 
@@ -299,7 +300,7 @@
     min-height: 50px;
     font-family: Arial, Helvetica, sans-serif;
     border: unset;
-    border-radius: 4px;
+    border-radius: 4px 4px !important;
     outline-color: #27D165;
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
