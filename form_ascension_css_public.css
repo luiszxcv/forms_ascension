@@ -90,7 +90,7 @@
 .modal_form_ascension-btn:checked+label:after,
 .modal_form_ascension-btn:not(:checked)+label:after {
     position: fixed !important;
-    top: 30px !important;
+    top: 50px !important;
     right: 30px !important;
     z-index: 110 !important;
     width: 40px !important;
