@@ -63,11 +63,12 @@
 
 .modal_form_ascension-btn:checked+label,
 .modal_form_ascension-btn:not(:checked)+label {
+    font-family: Arial, Helvetica, sans-serif;
     position: relative !important;
     font-weight: 700;
     font-size: 15px;
     line-height: 2;
-    height: 75px !important;
+    height: 80px !important;
     transition: all 200ms linear !important;
     border-radius: 4px !important;
     width: 240px !important;
@@ -306,9 +307,10 @@
     width: 100% !important;
     min-height: 30px;
     font-family: Arial, Helvetica, sans-serif;
-    border: unset;
+    border: unset !important;
+    ;
     border-radius: 4px !important;
-    outline-color: #27D165;
+    outline-color: #27D165 !important;
     background-color: rgb(255, 255, 255) !important;
     box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
 }
@@ -328,7 +330,7 @@
     font-family: Arial, Helvetica, sans-serif;
     border: unset;
     border-radius: 4px 4px !important;
-    outline-color: #27D165;
+    outline-color: #27D165 !important;
     background-color: rgb(255, 255, 255) !important;
     box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
 }
@@ -339,8 +341,8 @@
 
 .formbg-outer-ascension .field .errors_ascension,
 .formbg-outer-ascension .field .errors_ascension {
-    outline-color: red;
-    border: 1px solid red;
+    outline-color: red !important;
+    border: 1px solid red !important;
 }
 
 .formbg-outer-ascension .submitAscension-form {
@@ -356,7 +358,7 @@
     min-height: 44px;
     border: unset;
     border-radius: 4px;
-    outline-color: #27D165;
+    outline-color: #27D165 !important;
 }
 
 .formbg-outer-ascension .submitAscension-form:hover {
