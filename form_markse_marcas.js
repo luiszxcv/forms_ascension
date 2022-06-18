@@ -1,7 +1,7 @@
 var form = `<div class="formbg-outer-ascension">
 <div class="formbg">
     <div class="formbg-inner">
-        <h5 class="padding-bottom--15 padding-top--15">{{headline}}</h5>
+        <h5 class="">{{headline}}</h5>
         <form id="form_ascension_submit" method="POST" ref="form_ascension_submit" @submit="checkForm()" action="#">
             <div>
                 <label class="field padding-bottom--24 pp-input-wrap pp-error pp-input-md"><b class="pp-label-text">*Seu nome</b><input

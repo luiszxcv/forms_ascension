@@ -5,7 +5,10 @@
 .formbg-outer-ascension h1,
 .formbg-outer-ascension h2,
 .formbg-outer-ascension h3,
-.formbg-outer-ascension h4,
+.formbg-outer-ascension h4 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .formbg-outer-ascension h5 {
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(39, 39, 39) !important;
@@ -160,7 +163,8 @@
     margin-top: 50px !important;
     margin-bottom: 20px !important;
     border-radius: 4px !important;
-    overflow: hidden !important;
+    overflow-x: hidden !important;
+    overflow-y: scroll;
     padding-bottom: 20px !important;
     background-color: #fff !important;
     -ms-flex-item-align: center !important;
@@ -297,6 +301,9 @@
 .formbg-outer-ascension .field select {
     background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="10" role="presentation" class="vs__open-indicator"><path d="M9.211364 7.59931l4.48338-4.867229c.407008-.441854.407008-1.158247 0-1.60046l-.73712-.80023c-.407008-.441854-1.066904-.441854-1.474243 0L7 5.198617 2.51662.33139c-.407008-.441853-1.066904-.441853-1.474243 0l-.737121.80023c-.407008.441854-.407008 1.158248 0 1.600461l4.48338 4.867228L7 10l2.211364-2.40069z"></path></svg>') no-repeat right #ddd;
     -webkit-appearance: none !important;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
     background-position-x: calc(100% - 7px);
     font-size: 16px;
     line-height: 28px;
@@ -311,11 +318,8 @@
     box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
 }
 
-.formbg-outer-ascension .field select::-ms-expand {
-    display: none !important;
-}
-
-.formbg-outer-ascension .field select:after {
+.formbg-outer-ascension .field select::-ms-expand,
+.formbg-outer-ascension .field select::after {
     display: none !important;
 }
 
