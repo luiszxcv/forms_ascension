@@ -12,6 +12,10 @@
     font-size: 12px !important;
 }
 
+.formbg-outer-ascension .pp-custom-select {
+    background-color: white !important;
+}
+
 .formbg-outer-ascension .vs__selected-options {
     flex-wrap: nowrap !important;
 }
