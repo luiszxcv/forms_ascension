@@ -5,11 +5,22 @@
 .formbg-outer-ascension h1,
 .formbg-outer-ascension h2,
 .formbg-outer-ascension h3,
-.formbg-outer-ascension h4 {
+.formbg-outer-ascension h4,
+.formbg-outer-ascension h5,
+.formbg-outer-ascension h6 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.formbg-outer-ascension h5 {
+.modal_form_ascension .formbg-outer-ascension p,
+.modal_form_ascension .formbg-outer-ascension a,
+.modal_form_ascension .formbg-outer-ascension div,
+.modal_form_ascension .formbg-outer-ascension span,
+.modal_form_ascension .formbg-outer-ascension h1,
+.modal_form_ascension .formbg-outer-ascension h2,
+.modal_form_ascension .formbg-outer-ascension h3,
+.modal_form_ascension .formbg-outer-ascension h4,
+.modal_form_ascension .formbg-outer-ascension h5,
+.modal_form_ascension .formbg-outer-ascension h6 {
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(39, 39, 39) !important;
 }
@@ -52,7 +63,7 @@
     font-weight: 700;
     font-size: 15px;
     line-height: 2;
-    height: 60px !important;
+    height: 75px !important;
     transition: all 200ms linear !important;
     border-radius: 4px !important;
     width: 240px !important;
