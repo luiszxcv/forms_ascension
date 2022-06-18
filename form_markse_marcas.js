@@ -30,154 +30,154 @@ var styles = `
         }
         .modal_form_ascension-btn:checked + label,
         .modal_form_ascension-btn:not(:checked) + label{
-          position: relative;
+          position: relative !important;
           font-weight: 700;
           font-size: 15px;
           line-height: 2;
-          height: 50px;
-          transition: all 200ms linear;
-          border-radius: 4px;
-          width: 240px;
-          letter-spacing: 1px;
-          display: -webkit-inline-flex;
-          display: -ms-inline-flexbox;
-          display: inline-flex;
-          -webkit-align-items: center;
-          -moz-align-items: center;
-          -ms-align-items: center;
-          align-items: center;
-          -webkit-justify-content: center;
-          -moz-justify-content: center;
-          -ms-justify-content: center;
-          justify-content: center;
-          -ms-flex-pack: center;
-          text-align: center;
-            -ms-flex-item-align: center;
-            align-self: center;
-          border: none;
-          cursor: pointer;
-          background-color:#27D165;
-          color: white;
-          box-shadow: 0 12px 35px 0 rgba(16,39,112,.25);
+          height: 50px !important;
+          transition: all 200ms linear !important;
+          border-radius: 4px !important;
+          width: 240px !important;
+          letter-spacing: 1px !important;
+          display: -webkit-inline-flex !important;
+          display: -ms-inline-flexbox !important;
+          display: inline-flex !important;
+          -webkit-align-items: center !important;
+          -moz-align-items: center !important;
+          -ms-align-items: center !important;
+          align-items: center !important;
+          -webkit-justify-content: center !important;
+          -moz-justify-content: center !important;
+          -ms-justify-content: center !important;
+          justify-content: center !important;
+          -ms-flex-pack: center !important;
+          text-align: center !important;
+            -ms-flex-item-align: center !important;
+            align-self: center !important;
+          border: none !important;
+          cursor: pointer !important;
+          background-color:#27D165 !important;
+          color: white !important;
+          box-shadow: 0 12px 35px 0 rgba(16,39,112,.25) !important;
         }
         .modal_form_ascension-btn:not(:checked) + label:hover{
-          background-color: white;
-          color: #27D165;
+          background-color: white !important;
+          color: #27D165 !important;
         }
         .modal_form_ascension-btn:checked + label .uil,
         .modal_form_ascension-btn:not(:checked) + label .uil{
-          margin-left: 10px;
-          font-size: 18px;
+          margin-left: 10px !important;
+          font-size: 18px; 
         }
         .modal_form_ascension-btn:checked + label:after,
         .modal_form_ascension-btn:not(:checked) + label:after{
-          position: fixed;
-          top: 30px;
-          right: 30px;
-          z-index: 110;
-          width: 40px;
-          border-radius: 3px;
-          height: 30px;
-          text-align: center;
-          line-height: 30px;
-          font-size: 18px;
-          background-color: white;
-          color: #27D165;
-          content: 'x'; 
-          box-shadow: 0 12px 25px 0 rgba(16,39,112,.25);
-          transition: all 200ms linear;
-          opacity: 0;
-          pointer-events: none;
-          transform: translateY(20px);
+          position: fixed !important;
+          top: 30px !important;
+          right: 30px !important;
+          z-index: 110 !important;
+          width: 40px !important;
+          border-radius: 3px !important;
+          height: 30px !important;
+          text-align: center !important;
+          line-height: 30px !important;
+          font-size: 18px !important;
+          background-color: white !important;
+          color: #27D165 !important;
+          content: 'x' !important; 
+          box-shadow: 0 12px 25px 0 rgba(16,39,112,.25) !important;
+          transition: all 200ms linear !important;
+          opacity: 0 !important;
+          pointer-events: none !important;
+          transform: translateY(20px) !important;
         }
         .modal_form_ascension-btn:checked + label:hover:after,
         .modal_form_ascension-btn:not(:checked) + label:hover:after{
-          background-color: #27D165;
-          color: white;
+          background-color: #27D165 !important;
+          color: white !important;
         }
         .modal_form_ascension-btn:checked + label:after{
-          transition: opacity 300ms 300ms ease, transform 300ms 300ms ease, background-color 250ms linear, color 250ms linear;
-          opacity: 1;
-          pointer-events: auto;
-          transform: translateY(0);
+          transition: opacity 300ms 300ms ease, transform 300ms 300ms ease, background-color 250ms linear, color 250ms linear !important;
+          opacity: 1 !important;
+          pointer-events: auto !important;
+          transform: translateY(0) !important;
         }
         .modal_form_ascension{
-          position: fixed;
-          display: block;
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-          -ms-flex-pack: center;
-          justify-content: center;
-          margin: 0 auto;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          z-index: 100;
-          overflow-x: hidden;
-          background-color: rgba(31,32,41,.75);
-          pointer-events: none;
-          opacity: 0;
-          transition: opacity 250ms 700ms ease;
+          position: fixed !important;
+          display: block !important;
+          display: -ms-flexbox !important;
+          display: flex !important;
+          -ms-flex-wrap: wrap !important ;
+          flex-wrap: wrap !important;
+          -ms-flex-pack: center !important;
+          justify-content: center !important;
+          margin: 0 auto !important;
+          top: 0 !important;
+          left: 0 !important;
+          width: 100% !important;
+          height: 100% !important;
+          z-index: 100 !important;
+          overflow-x: hidden !important;
+          background-color: rgba(31,32,41,.75) !important;
+          pointer-events: none !important;
+          opacity: 0 !important;
+          transition: opacity 250ms 700ms ease !important;
         }
         .modal_form_ascension-btn:checked ~ .modal_form_ascension{
-          pointer-events: auto;
-          opacity: 1;
-          transition: all 300ms ease-in-out;
+          pointer-events: auto !important;
+          opacity: 1 !important;
+          transition: all 300ms ease-in-out !important;
         }
         .modal_form_ascension-wrap {
-          position: relative;
-          display: block;
-          width: 100%;
-          max-width: 600px;
-          margin: 0 auto;
-          margin-top: 20px;
-          margin-bottom: 20px;
-          border-radius: 4px;
-          overflow: hidden;
-          padding-bottom: 20px;
-          background-color: #fff;
-            -ms-flex-item-align: center;
-            align-self: center;
-            box-shadow: 0 12px 25px 0 rgba(199,175,189,.25);
-          opacity: 0;
-          transform: scale(0.6);
-          transition: opacity 250ms 250ms ease, transform 300ms 250ms ease;
+          position: relative !important;
+          display: block !important;
+          width: 100% !important;
+          max-width: 600px !important;
+          margin: 0 auto !important;
+          margin-top: 20px !important;
+          margin-bottom: 20px !important;
+          border-radius: 4px !important;
+          overflow: hidden !important;
+          padding-bottom: 20px !important;
+          background-color: #fff !important;
+            -ms-flex-item-align: center !important;
+            align-self: center !important;
+            box-shadow: 0 12px 25px 0 rgba(199,175,189,.25) !important;
+          opacity: 0 !important;
+          transform: scale(0.6) !important;
+          transition: opacity 250ms 250ms ease, transform 300ms 250ms ease !important;
         }
         .modal_form_ascension-wrap img {
-          display: block;
-          width: 100%;
-          height: auto;
+          display: block !important;
+          width: 100% !important;
+          height: auto !important;
         }
         .modal_form_ascension-wrap p {
-          font-size:12px;
-          margin:0px !important;
+          font-size:12px !important;
+          margin:0px !important !important;
           
         }
         .modal_form_ascension-btn:checked ~ .modal_form_ascension .modal_form_ascension-wrap{
-          opacity: 1;
-          transform: scale(1);
-          transition: opacity 250ms 500ms ease, transform 350ms 500ms ease;
+          opacity: 1 !important;
+          transform: scale(1) !important;
+          transition: opacity 250ms 500ms ease, transform 350ms 500ms ease !important;
         }
 
 
         .modal_form_ascension-btn:checked ~ .logo img {
-            filter: brightness(100%);
-          transition: all 250ms linear;
+            filter: brightness(100%) !important;
+          transition: all 250ms linear !important;
         }
 
 
         @media screen and (max-width: 500px) {
           .modal_form_ascension-wrap {
-            width: calc(95%);
-            margin:auto;
-            padding-bottom: 15px;
+            width: calc(95%) !important;
+            margin:auto !important;
+            padding-bottom: 15px !important;
           }
           .modal_form_ascension-wrap p {
-            margin:0px !important;
-            font-size:12px;
+            margin:0px !important !important;
+            font-size:12px !important;
           }
         }
 
@@ -268,7 +268,7 @@ var styles = `
         }
         .formbg-outer-ascension .field select {
             background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="10" role="presentation" class="vs__open-indicator"><path d="M9.211364 7.59931l4.48338-4.867229c.407008-.441854.407008-1.158247 0-1.60046l-.73712-.80023c-.407008-.441854-1.066904-.441854-1.474243 0L7 5.198617 2.51662.33139c-.407008-.441853-1.066904-.441853-1.474243 0l-.737121.80023c-.407008.441854-.407008 1.158248 0 1.600461l4.48338 4.867228L7 10l2.211364-2.40069z"></path></svg>') no-repeat right #ddd;
-            -webkit-appearance: none;
+            -webkit-appearance: none !important;
             background-position-x: calc(100% - 7px);
             font-size: 16px;
             line-height: 28px;
