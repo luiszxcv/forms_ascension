@@ -37121,7 +37121,6 @@ async function send() {
     return res;
 };
 
-
 function telefone(v) {
     v = v.replace(/\D/g, "") //Remove tudo o que não é dígito
     v = v.replace(/^(\d\d)(\d)/g, "($1) $2") //Coloca parênteses em volta dos dois primeiros dígitos
