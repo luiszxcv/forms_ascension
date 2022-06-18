@@ -1,5 +1,16 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue-select/3.10.3/vue-select.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/vue-select/dist/vue-select.css" />
+<link rel="stylesheet" href="https://forms.ascensiondigital.com.br/form_ascension_css_public.css" />
+<script type="text/javascript" src="https://forms.ascensiondigital.com.br/form_markse_marcas_public.js" defer></script>
+
+
 <div id="form_ascension">
+
 <form-ascension headline="" formId="UJ44hgcg" :redirect_url="encodeURIComponent('https://api.whatsapp.com/send/?phone=5566996181212')" button_text="Whats"></form-ascension>
+
 <modal-form-ascension headline="Preencha o formulário para verificar disponibilidade de registro da sua marca." formId="UJ44hgcg" :redirect_url="encodeURIComponent('https://api.whatsapp.com/send/?phone=5566996181212')" button_text="Whats"></modal-form-ascension>
+
 <modal-fixed-modal-ascension headline="Preencha o formulário para verificar disponibilidade de registro da sua marca." formId="UJ44hgcg" :redirect_url="encodeURIComponent('https://api.whatsapp.com/send/?phone=5566996181212')" button_text="Whats"></modal-fixed-modal-ascension>
+
 </div>
