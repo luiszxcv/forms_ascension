@@ -51,6 +51,10 @@
     text-align: left !important;
 }
 
+.formbg-outer-ascension .v-list .v-list-item--active .v-list-item__title {
+    color: rgb(39, 39, 39) !important;
+}
+
 [type="checkbox"]:checked,
 [type="checkbox"]:not(:checked) {
     position: absolute;
@@ -329,8 +333,7 @@
     box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
 }
 
-.formbg-outer-ascension .field select::-ms-expand,
-.formbg-outer-ascension .field select::after {
+.formbg-outer-ascension .select-holder:after {
     display: none !important;
 }
 
