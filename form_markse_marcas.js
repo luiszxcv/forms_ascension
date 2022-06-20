@@ -66,7 +66,7 @@ var form = `<div class="formbg-outer-ascension">
             </label>
             <div v-if="errors.length">
                 <b>Por favor, revise o(s) seguinte(s) campo(s):</b>
-                <div style=""><span v-for="error in errors">{{ error.name}}</div>
+                <div style=""><span v-for="error in errors">{{ error.name}}, </div>
             </div>  
     </div>
 

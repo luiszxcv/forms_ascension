@@ -174,9 +174,9 @@
     display: block !important;
     width: 100% !important;
     max-width: 600px !important;
-    max-height: 600px !important;
+    max-height: 750px !important;
     margin: 0 auto !important;
-    margin-top: 50px !important;
+    margin-top: 40px !important;
     margin-bottom: 20px !important;
     border-radius: 4px !important;
     overflow-x: hidden !important;
@@ -308,7 +308,6 @@
     min-height: 30px;
     font-family: Arial, Helvetica, sans-serif;
     border: unset !important;
-    ;
     border-radius: 4px !important;
     outline-color: #27D165 !important;
     background-color: rgb(255, 255, 255) !important;
