@@ -37,7 +37,7 @@
 .scrool_ascension {
     width:40px !important; position:fixed!important; right:5px!important; bottom:20px!important;
     animation-name:bounce;
-    animation-duration:1s;
+    animation-duration:3s;
     animation-iteration-count:infinite;
     animation-direction: alternate;
   }
