@@ -36795,7 +36795,13 @@ async function checkForm() {
     if (await this.validForm()) {
         if (await this.send()) {
             this.customFields = {}
-            window.open(this.redirect_url, "_blank").focus();
+            
+            let a= document.createElement('a');
+            a.target= '_blank';
+            a.href=decodeURIComponent(this.redirect_url);
+            a.click();
+            //window.location.href = this.redirect_url;
+            //window.open(this.redirect_url, "_blank");
         } else {
             console.log("error send")
         }
@@ -36821,7 +36827,9 @@ Vue.component('form-ascension', {
         }
     },
     methods: {},
-    mounted() {},
+    mounted() {
+        
+    },
     watch: {
         customFields: {
             handler(val) {
@@ -36903,7 +36911,9 @@ Vue.component('modal-fixed-modal-ascension', {
         }
     },
     methods: {},
-    mounted() {},
+    mounted() {
+        
+    },
     watch: {
         customFields: {
             handler(val) {
