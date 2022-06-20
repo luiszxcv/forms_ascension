@@ -25,6 +25,23 @@
     color: rgb(39, 39, 39) !important;
 }
 
+@keyframes bounce {
+    from {
+      transform:translateY(0px);
+    }
+    to {
+      transform:translateY(10px);
+    }
+}
+
+.scrool_ascension {
+    width:40px !important; position:fixed!important; right:5px!important; bottom:20px!important;
+    animation-name:bounce;
+    animation-duration:1s;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+  }
+
 .formbg-outer-ascension p {
     margin: 0px !important;
     padding: 0px !important;
@@ -46,7 +63,7 @@
 }
 
 .formbg-outer-ascension .vs__selected {
-    font-size: 16px !important;
+    font-size: 14px !important;
     width: 100% !important;
     text-align: left !important;
 }
@@ -312,6 +329,11 @@
     outline-color: #27D165 !important;
     background-color: rgb(255, 255, 255) !important;
     box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px !important;
+}
+
+.formbg-outer-ascension .v-select_ascension input{
+    box-shadow: none !important;
+    width:20px !important;
 }
 
 .formbg-outer-ascension .field select {

@@ -61,7 +61,7 @@ var form = `<div class="formbg-outer-ascension">
             <label class="field padding-bottom--24 pp-input-wrap pp-input-md"><b class="pp-label-text">*Área
                     de atuação</b>
                 <div class="pp-custom-select">
-                    <v-select :options="options" name="Área de atuacão" id="rea_de_atua_o" :required="!customFields.rea_de_atua_o" v-model="customFields.rea_de_atua_o"></v-select>
+                    <v-select :options="options" name="Área de atuacão" class="v-select_ascension" id="rea_de_atua_o" :required="!customFields.rea_de_atua_o" v-model="customFields.rea_de_atua_o"></v-select>
                 </div>
             </label>
             <div v-if="errors.length">
@@ -36878,8 +36878,11 @@ Vue.component('modal-form-ascension', {
       	<div class="modal_form_ascension">		
 	      	<div class="modal_form_ascension-wrap padding-horizontal--48">
           ` + form + `
-	      	</div>			          		
+            
+	      	</div>	
+              <img class="scrool_ascension" src="https://forms.ascensiondigital.com.br/src/img/scroll-icon-png-22.jpg" alt="scrool">
       	</div>	
+          
 	    </div>
     </div>
     `
@@ -36919,7 +36922,9 @@ Vue.component('modal-fixed-modal-ascension', {
       	<div class="modal_form_ascension">		
 	      	<div class="modal_form_ascension-wrap padding-horizontal--48">	
           ` + form + `
+            
 	      	</div>		
+              <img class="scrool_ascension"  src="https://forms.ascensiondigital.com.br/src/img/scroll-icon-png-22.jpg" alt="scrool">
       	</div>	
 	    </div>
     </div>
