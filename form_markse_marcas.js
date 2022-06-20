@@ -36754,7 +36754,7 @@ async function send() {
     myHeaders.append("Content-Type", "application/json");
 
     var graphql = JSON.stringify({
-        query: `mutation {\r\n  submitPublicForm(input: {\r\n    formId: \"${this.formId}\",\r\n    
+        query: `mutation {\r\n  submitPublicForm(input: {\r\n    formId: \"${this.formid}\",\r\n    
         filledFields: [\r\n      {fieldId: \"nome_do_contato\", fieldValue: \"${this.customFields.nome_do_contato}\"},\r\n            
         {fieldId: \"nome_da_empresa\", fieldValue: \"${this.customFields.nome_da_empresa}\"},\r\n            
         {fieldId: \"email\", fieldValue: \"${this.customFields.email}\"},\r\n            
@@ -36813,7 +36813,7 @@ async function checkForm() {
 
 Vue.component('v-select', VueSelect.VueSelect);
 Vue.component('form-ascension', {
-    props: ['button_text', "redirect_url", "formId", "headline"],
+    props: ['button_text', "redirect_url", "formid", "headline"],
     data: function() {
         return {
             form: form,
@@ -36828,6 +36828,7 @@ Vue.component('form-ascension', {
     },
     methods: {},
     mounted() {
+        console.log(this.formid)
         
     },
     watch: {
@@ -36849,7 +36850,7 @@ Vue.component('form-ascension', {
 })
 
 Vue.component('modal-form-ascension', {
-    props: ['button_text', "redirect_url", "formId", "headline"],
+    props: ['button_text', "redirect_url", "formid", "headline"],
     data: function() {
         return {
             form: form,
@@ -36897,7 +36898,7 @@ Vue.component('modal-form-ascension', {
 })
 
 Vue.component('modal-fixed-modal-ascension', {
-    props: ['button_text', "redirect_url", "formId", "headline"],
+    props: ['button_text', "redirect_url", "formid", "headline"],
     data: function() {
         return {
             form: form,
