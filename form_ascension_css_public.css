@@ -42,6 +42,10 @@
     animation-direction: alternate;
   }
 
+.formbg-outer-ascension {
+    padding-bottom: 20px;
+}
+
 .formbg-outer-ascension p {
     margin: 0px !important;
     padding: 0px !important;
@@ -52,6 +56,11 @@
 .formbg-outer-ascension .pp-custom-select {
     background-color: white !important;
 }
+
+.formbg-outer-ascension .pp-label-text {
+    font-size: 14px !important;
+}
+
 
 .formbg-outer-ascension .vs__selected-options {
     flex-wrap: nowrap !important;

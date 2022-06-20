@@ -4,17 +4,16 @@ var form = `<div class="formbg-outer-ascension">
         <h5 class="">{{headline}}</h5>
         <form id="form_ascension_submit" method="POST" ref="form_ascension_submit" @submit="checkForm()" action="#">
             <div>
-                <label class="field padding-bottom--24 pp-input-wrap pp-error pp-input-md"><b class="pp-label-text">*Seu nome</b><input
-                        name="Nome do contato" id="nome_do_contato" v-model="customFields.nome_do_contato"  type="text" tabindex="0" class="pp-input" required></label>
-                <label class="field padding-bottom--24 pp-input-wrap pp-input-md"><b class="pp-label-text">*Nome da marca</b>
+                <label class="field padding-bottom--24 pp-input-wrap pp-error pp-input-md"><span class="pp-label-text">*Seu nome</span><input
+                        name="Nome do contato" placeholder="Jorge da Silva"  id="nome_do_contato" v-model="customFields.nome_do_contato"  type="text" tabindex="0" class="pp-input" required></label>
+                <label class="field padding-bottom--24 pp-input-wrap pp-input-md"><b class="pp-label-text">*Nome da marca</span>
                     <div class="markdown">
-                        <p>Digite o nome da marca que deseja registrar.</p>
-                    </div><input name="Nome da marca" id="nome_da_empresa"  v-model="customFields.nome_da_empresa" type="text" tabindex="0" class="pp-input"  required>
+                    </div><input name="Nome da marca" placeholder="Nome do seu negócio"  id="nome_da_empresa"   v-model="customFields.nome_da_empresa" type="text" tabindex="0" class="pp-input"  required>
                 </label>
-                <label class="field padding-bottom--24 pp-input-wrap pp-input-md"><b class="pp-label-text">*Seu melhor email</b><input
+                <label class="field padding-bottom--24 pp-input-wrap pp-input-md"><span class="pp-label-text">*Seu melhor email</span><input
                         name="Email" id="email" v-model="customFields.email" placeholder="email@example.com" type="email" tabindex="0"
                         class="pp-input" required></label>
-                <label class="field padding-bottom--24 pp-input-wrap pp-input-md"><b class="pp-label-text">Contato</b>
+                <label class="field padding-bottom--24 pp-input-wrap pp-input-md"><span class="pp-label-text">Contato</span>
                     <div class="markdown">
                         <p>Informe o seu WhatsApp
                         </p>
@@ -22,7 +21,7 @@ var form = `<div class="formbg-outer-ascension">
                     <div class="intl-tel-input     allow-dropdown">
                         <input tabindex="0" maxlength="15" type="text" placeholder="(__) _____-____"  autocomplete="off" class="pp-input" name="WhatsApp" v-model="customFields.telefone" id="telefone" required>
                 </label>
-            </div><label class="field padding-bottom--24 pp-input-wrap pp-input-md"><b class="pp-label-text">*Estado</b>
+            </div><label class="field padding-bottom--24 pp-input-wrap pp-input-md"><span class="pp-label-text">*Estado</span>
                 <div class="pp-custom-select"><select name="Estado" id="estado" v-model="customFields.estado" tabindex="0" class=" pp-select"  required>
                         <option value=""></option>
                         <option value="AC">AC</option>
@@ -55,17 +54,17 @@ var form = `<div class="formbg-outer-ascension">
                     </select></div>
             </label>
             <label class="field padding-bottom--24 pp-input-wrap pp-input-md">
-                <b class="pp-label-text">*Cidade</b><input name="Cidade" id="cidade" v-model="customFields.cidade" type="text" tabindex="0"
+                <span class="pp-label-text">*Cidade</span><input name="Cidade" placeholder="São Paulo"  id="cidade" v-model="customFields.cidade" type="text" tabindex="0"
                     class="pp-input"  required>
             </label>
-            <label class="field padding-bottom--24 pp-input-wrap pp-input-md"><b class="pp-label-text">*Área
-                    de atuação</b>
+            <label class="field padding-bottom--24 pp-input-wrap pp-input-md"><span class="pp-label-text">*Área
+                    de atuação</span>
                 <div class="pp-custom-select">
                     <v-select :options="options" name="Área de atuacão" class="v-select_ascension" id="rea_de_atua_o" :required="!customFields.rea_de_atua_o" v-model="customFields.rea_de_atua_o"></v-select>
                 </div>
             </label>
             <div v-if="errors.length">
-                <b>Por favor, revise o(s) campo(s):</b>
+                <span>Por favor, revise o(s) campo(s):</span>
                 <div style=""><span v-for="error in errors">{{ error.name}}, </div>
             </div>  
     </div>
