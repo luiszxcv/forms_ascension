@@ -38,8 +38,8 @@ Vue.component('modal-ascension', {
     template: `
     <div>
       <div class="section_form_ascension">
-        <input class="modal_form_ascension-btn" type="checkbox" name="modal_form_ascension-btn"/>
-        <label for="modal_form_ascension-btn"></label>	
+        <input class="modal_form_ascension-btn" type="checkbox" id="modal_form_ascension-btn" name="modal_form_ascension-btn"/>
+        <label for="modal_form_ascension-btn" id="label-whatsapp-fixed-icon"></label>	
       	<div class="modal_form_ascension">		
 	      	<div class="modal_form_ascension-wrap padding-horizontal--48">
           ` + form + `
