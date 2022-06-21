@@ -137,19 +137,3 @@ try {
 } catch {
     console.log("form não localizado")
 }
-try {
-    new Vue({
-        el: '#button_form_markse_marcas',
-        data: {}
-    })
-} catch {
-    console.log("button não localizado")
-}
-try {
-    new Vue({
-        el: '#fixed_form_markse_marcas',
-        data: {}
-    })
-} catch {
-    console.log("fixed não localizado")
-}
