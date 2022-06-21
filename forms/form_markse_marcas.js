@@ -109,7 +109,6 @@ Vue.component('modal-form-ascension', {
     `
 })
 
-
 Vue.component('modal-fixed-modal-ascension', {
     data: function() {
         return {}
@@ -129,23 +128,17 @@ Vue.component('modal-fixed-modal-ascension', {
   `
 });
 
-if (document.getElementById("form_markse_marcas")) {
-    new Vue({
-        el: '#form_markse_marcas',
-        data: {}
-    })
-}
+new Vue({
+    el: '#form_markse_marcas',
+    data: {}
+})
 
-if (document.getElementById("button_form_markse_marcas")) {
-    new Vue({
-        el: '#button_form_markse_marcas',
-        data: {}
-    })
-}
+new Vue({
+    el: '#button_form_markse_marcas',
+    data: {}
+})
 
-if (document.getElementById("fixed_form_markse_marcas")) {
-    new Vue({
-        el: '#fixed_form_markse_marcas',
-        data: {}
-    })
-}
+new Vue({
+    el: '#fixed_form_markse_marcas',
+    data: {}
+})
