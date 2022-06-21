@@ -38,8 +38,8 @@ Vue.component('modal-ascension', {
     template: `
     <div>
       <div class="section_form_ascension">
-        <input class="modal_form_ascension-btn" type="checkbox" id="modal_form_ascension-btn" name="modal_form_ascension-btn"/>
-        <label for="modal_form_ascension-btn" id="label-whatsapp-fixed-icon"></label>	
+        <input class="modal_form_ascension-btn" type="checkbox" name="modal_form_ascension-btn"/>
+        <label for="modal_form_ascension-btn"></label>	
       	<div class="modal_form_ascension">		
 	      	<div class="modal_form_ascension-wrap padding-horizontal--48">
           ` + form + `
@@ -109,7 +109,6 @@ Vue.component('modal-form-ascension', {
     `
 })
 
-
 Vue.component('modal-fixed-modal-ascension', {
     data: function() {
         return {}
@@ -129,9 +128,7 @@ Vue.component('modal-fixed-modal-ascension', {
   `
 });
 
-if (document.getElementById("form_markse_marcas")) {
-    new Vue({
-        el: '#form_markse_marcas',
-        data: {}
-    })
-}
+new Vue({
+    el: '#form_markse_marcas',
+    data: {}
+})

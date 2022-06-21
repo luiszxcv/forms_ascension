@@ -20,17 +20,6 @@
     }
 }
 
-.scrool_ascension {
-    width: 40px !important;
-    position: fixed!important;
-    right: 5px!important;
-    bottom: 20%!important;
-    animation-name: bounce;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
 .formbg-outer-ascension {
     padding-bottom: 20px;
 }
