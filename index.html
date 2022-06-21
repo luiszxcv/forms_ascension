@@ -46,12 +46,18 @@
                             <div class="">
                                 <div id="form_markse_marcas">
 
-                                    <modal-ascension button_text="WhatsApp" headline="Preencha o formulário para verificar disponibilidade de registro da sua marca." formid="UJ44hgcg" :redirect_url="encodeURIComponent('https://api.whatsapp.com/send/?phone=5566996181212')"></modal-ascension>
-
                                     <form-ascension button_text="Whats" headline="" formid="UJ44hgcg" :redirect_url="encodeURIComponent('https://api.whatsapp.com/send/?phone=5566996181212&text=')"></form-ascension>
 
+                                </div>
+                                <div id="button_form_markse_marcas">
+
+                                    <modal-ascension button_text="WhatsApp" headline="Preencha o formulário para verificar disponibilidade de registro da sua marca." formid="UJ44hgcg" :redirect_url="encodeURIComponent('https://api.whatsapp.com/send/?phone=5566996181212')"></modal-ascension>
                                     <modal-form-ascension button_text="Whats"></modal-form-ascension>
 
+                                </div>
+                                <div id="fixed_form_markse_marcas">
+
+                                    <modal-ascension button_text="WhatsApp" headline="Preencha o formulário para verificar disponibilidade de registro da sua marca." formid="UJ44hgcg" :redirect_url="encodeURIComponent('https://api.whatsapp.com/send/?phone=5566996181212')"></modal-ascension>
                                     <modal-fixed-modal-ascension></modal-fixed-modal-ascension>
 
                                 </div>
@@ -63,153 +69,6 @@
         </section>
 
     </div>
-
-    <!--<div id="root" style="width: 100%; height: 100%">
-            <div>
-                <div class="pp-new-public-form change-hex-background-body pp-no-before"
-                    style="background-color: rgb(255, 255, 255);">
-                    <div class="pp-new-public-form-content">
-                        <div class="pp-right-side">
-                            <div class="pp-new-public-form-fields">
-                                <form class="mousetrap">
-                                    <div class="pp-new-public-form-wrapper">
-                                        <div class="">
-                                            <div><label class="pp-input-wrap pp-error pp-input-md"><b
-                                                        class="pp-label-text">*Seu nome</b><input
-                                                        name="customFields.seu_nome" type="text" tabindex="0"
-                                                        class="pp-input" value=""><span class="pp-help-message">deve ser
-                                                        informado</span></label><label class="pp-input-wrap pp-input-md"><b
-                                                        class="pp-label-text">*Email</b><input name="customFields.email"
-                                                        placeholder="email@example.com" type="email" tabindex="0"
-                                                        class="pp-input" value=""></label>
-                                                <div class="pp-input-wrap pp-input-md"><b class="pp-label-text">Telefone</b>
-                                                    <div class="markdown">
-                                                        <p>Informe o telefone comercial</p>
-                                                    </div>
-                                                    <div class="intl-tel-input allow-dropdown">
-                                                        <div class="flag-container">
-                                                            <div class="selected-flag" tabindex="0"
-                                                                title="Brazil (Brasil): +55">
-                                                                <div class="iti-flag br"></div>
-                                                                <div class="iti-arrow"></div>
-                                                            </div>
-                                                            <ul class="country-list hide">
-                                                                <li class="country" data-dial-code="55"
-                                                                    data-country-code="br">
-                                                                    <div class="flag-box">
-                                                                        <div class="iti-flag br"></div>
-                                                                    </div><span class="country-name">Brazil
-                                                                        (Brasil)</span><span class="dial-code">+55</span>
-                                                                </li>
-                                                                
-
-                                                            </ul>
-                                                        </div><input tabindex="0" type="tel" autocomplete="off"
-                                                            class="pp-input" name="customFields.telefone"
-                                                            id="phone-field-id-Telefone" placeholder="(11) 96123-4567"
-                                                            value="">
-                                                    </div>
-                                                </div><label class="pp-input-wrap pp-input-md"><b
-                                                        class="pp-label-text">*Estado</b>
-                                                    <div class="pp-custom-select"><select name="customFields.estado"
-                                                            tabindex="0" class="pp-select">
-                                                            <option value=""></option>
-                                                            <option value="AC">AC</option>
-                                                            <option value="AL">AL</option>
-                                                            <option value="AP">AP</option>
-                                                            <option value="AM">AM</option>
-                                                            <option value="BA">BA</option>
-                                                            <option value="CE">CE</option>
-                                                            <option value="DF">DF</option>
-                                                            <option value="ES">ES</option>
-                                                            <option value="GO">GO</option>
-                                                            <option value="MA">MA</option>
-                                                            <option value="MT">MT</option>
-                                                            <option value="MS">MS</option>
-                                                            <option value="MG">MG</option>
-                                                            <option value="PA">PA</option>
-                                                            <option value="PB">PB</option>
-                                                            <option value="PR">PR</option>
-                                                            <option value="PE">PE</option>
-                                                            <option value="PI">PI</option>
-                                                            <option value="RJ">RJ</option>
-                                                            <option value="RN">RN</option>
-                                                            <option value="RS">RS</option>
-                                                            <option value="RO">RO</option>
-                                                            <option value="RR">RR</option>
-                                                            <option value="SC">SC</option>
-                                                            <option value="SP">SP</option>
-                                                            <option value="SE">SE</option>
-                                                            <option value="TO">TO</option>
-                                                        </select></div>
-                                                </label><label class="pp-input-wrap pp-input-md"><b
-                                                        class="pp-label-text">*Cidade de interesse</b><input
-                                                        name="customFields.cidade" type="text" tabindex="0" class="pp-input"
-                                                        value=""></label><label class="pp-input-wrap pp-input-md"><b
-                                                        class="pp-label-text">*Como você atua hoje?</b>
-                                                    <div class="pp-custom-select"><select
-                                                            name="customFields.como_voc_atua_hoje" tabindex="0"
-                                                            class="pp-select">
-                                                            <option value=""></option>
-                                                            <option value="Empreendo">Empreendo</option>
-                                                            <option value="Trabalho CLT">Trabalho CLT</option>
-                                                            <option value="Servidor público">Servidor público</option>
-                                                        </select></div>
-                                                </label><label class="pp-input-wrap pp-input-md"><b
-                                                        class="pp-label-text">*Qual o seu ramo de atuação?</b>
-                                                    <div class="pp-custom-select"><select
-                                                            name="customFields.qual_o_seu_ramo_de_atua_o" tabindex="0"
-                                                            class="pp-select">
-                                                            <option value=""></option>
-                                                            <option value="Direito">Direito</option>
-                                                            <option value="Marketing">Marketing</option>
-                                                            <option value="Outro">Outro</option>
-                                                        </select></div>
-                                                </label><label class="pp-input-wrap pp-input-md"><b
-                                                        class="pp-label-text">*Qual sua disponibilidade de investimento</b>
-                                                    <div class="pp-custom-select"><select
-                                                            name="customFields.qual_sua_disponibilidade_de_investimento"
-                                                            tabindex="0" class="pp-select">
-                                                            <option value=""></option>
-                                                            <option value="Não possuo valor disponível">Não possuo valor
-                                                                disponível</option>
-                                                            <option value="Creio possuir parcialmente o valor">Creio possuir
-                                                                parcialmente o valor</option>
-                                                            <option value="Possuo valor de investimento disponível">Possuo
-                                                                valor de investimento disponível</option>
-                                                        </select></div>
-                                                </label>
-                                            </div><button type="submit" data-pp-button="submit-fields" disabled=""
-                                                tabindex="0" class="pp-btn pp-disabled"
-                                                style="background: rgb(143, 119, 64);">Entrar para a lista</button>
-                                            </div>
-                                            <div class="pp-new-public-form-overlay"></div>
-                                        </div>
-                                    </div>
-                                    <div data-testid="#email-wrapper" class="pp-creator-email-wrapper">
-                                        <div class="pp-creator-email">
-                                            <div class="pp-creator-email-bar" style="background-color: rgb(143, 119, 64);">
-                                            </div><label class="pp-input-wrap pp-input-md"><b class="pp-label-text">Preencha
-                                                    seu email</b>
-                                                <div class="markdown">
-                                                    <p>Enviaremos um link com o status de suas solicitações para sua caixa
-                                                        de entrada</p>
-                                                </div><input name="creatorEmail" placeholder="email@dominio.com"
-                                                    type="email" data-pp-input="creator-email-field"
-                                                    data-testid="#email-input" tabindex="0" class="pp-input" value="">
-                                            </label><button type="button" data-pp-button="collect-creator-email"
-                                                tabindex="0" class="pp-btn"
-                                                style="background: rgb(143, 119, 64);">Pular</button><button type="button"
-                                                tabindex="0" class="pp-btn-link pp-btn">Voltar ao formulário</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div></div>
-        </div>-->
 
     <!-- footer section -->
     <section class="container-fluid footer_section">

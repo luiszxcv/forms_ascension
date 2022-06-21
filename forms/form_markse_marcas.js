@@ -129,9 +129,17 @@ Vue.component('modal-fixed-modal-ascension', {
   `
 });
 
-
-
 new Vue({
     el: '#form_markse_marcas',
+    data: {}
+})
+
+new Vue({
+    el: '#button_form_markse_marcas',
+    data: {}
+})
+
+new Vue({
+    el: '#fixed_form_markse_marcas',
     data: {}
 })
