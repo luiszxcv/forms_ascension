@@ -444,6 +444,8 @@
 
 /*!normalize.css v2.0.1 | MIT License | git.io/normalize*/
 
+
+/*
 @import "https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap";
 article,
 aside,
@@ -20211,8 +20213,6 @@ screen and (max-width:800px) and (orientation:landscape) {
 }
 
 
-/*!* GRID by Bootstrap v3.1.1 (http://getbootstrap.com) * Copyright 2011-2014 Twitter, Inc. * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)*/
-
 .container {
     margin-right: auto;
     margin-left: auto;
@@ -21163,3 +21163,4 @@ screen and (max-width:800px) and (orientation:landscape) {
         display: none!important
     }
 }
+*/
