@@ -1,7 +1,7 @@
 import { checkForm, send, telefone, validForm, loadHTML } from '/src/js/functions_globals.js';
 import { options_markse } from '/src/js/variables.js';
 var form = "";
-await loadHTML("../src/forms/markse_marcas.html").then(res => {
+await loadHTML("https://forms.ascensiondigital.com.br/src/forms/markse_marcas.html").then(res => {
     form = res;
 });
 
