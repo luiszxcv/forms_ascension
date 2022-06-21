@@ -3,17 +3,20 @@
         <div class="formbg-inner">
             <h4 class="">{{headline}}</h4>
             <form id="form_ascension_submit" method="POST" ref="form_ascension_submit" @submit="checkForm()" action="#">
-                <div>
-                    <label class="field padding-bottom--24 pp-input-wrap pp-error pp-input-md"><span class="pp-label-text">*Seu nome</span><input
-                            name="Nome do contato" placeholder="Jorge da Silva"  id="nome_do_contato" v-model="customFields.nome_do_contato"  type="text" tabindex="0" class="pp-input" required></label>
-                    <label class="field padding-bottom--24 pp-input-wrap pp-input-md"><span class="pp-label-text">*Nome da marca</span>
-                        <div class="markdown">
-                        </div><input name="Nome da marca" placeholder="Nome do seu negócio"  id="nome_da_empresa"   v-model="customFields.nome_da_empresa" type="text" tabindex="0" class="pp-input"  required>
-                    </label>
-                    <label class="field padding-bottom--24 pp-input-wrap pp-input-md"><span class="pp-label-text">*Seu melhor email</span><input
+                <label class="field padding-bottom--24 pp-input-wrap pp-error pp-input-md">
+                        <span class="pp-label-text">*Seu nome</span>
+                        <input name="Nome do contato" placeholder="Jorge da Silva"  id="nome_do_contato" v-model="customFields.nome_do_contato"  type="text" tabindex="0" class="pp-input" required>
+                </label>
+                <label class="field padding-bottom--24 pp-input-wrap pp-input-md"><span class="pp-label-text">*Nome da marca</span>
+                        <input name="Nome da marca" placeholder="Nome do seu negócio"  id="nome_da_empresa"   v-model="customFields.nome_da_empresa" type="text" tabindex="0" class="pp-input"  required>
+                </label>
+                <label class="field padding-bottom--24 pp-input-wrap pp-input-md">
+                        <span class="pp-label-text">*Seu melhor email</span>
+                        <input
                             name="Email" id="email" v-model="customFields.email" placeholder="email@example.com" type="email" tabindex="0"
-                            class="pp-input" required></label>
-                    <label class="field padding-bottom--24 pp-input-wrap pp-input-md"><span class="pp-label-text">Contato</span>
+                            class="pp-input" required>
+                </label>
+                <label class="field padding-bottom--24 pp-input-wrap pp-input-md"><span class="pp-label-text">Contato</span>
                         <div class="markdown">
                             <p>Informe o seu WhatsApp
                             </p>
@@ -21,65 +24,69 @@
                         <div class="intl-tel-input     allow-dropdown">
                             <input tabindex="0" maxlength="15" type="text" placeholder="(__) _____-____"  autocomplete="off" class="pp-input" name="WhatsApp" v-model="customFields.telefone" id="telefone" required>
                     </label>
-                </div><label class="field padding-bottom--24 pp-input-wrap pp-input-md"><span class="pp-label-text">*Estado</span>
-                    <div class="pp-custom-select"><select name="Estado" id="estado" v-model="customFields.estado" tabindex="0" class=" pp-select"  required>
-                            <option value=""></option>
-                            <option value="AC">AC</option>
-                            <option value="AL">AL</option>
-                            <option value="AP">AP</option>
-                            <option value="AM">AM</option>
-                            <option value="BA">BA</option>
-                            <option value="CE">CE</option>
-                            <option value="DF">DF</option>
-                            <option value="ES">ES</option>
-                            <option value="GO">GO</option>
-                            <option value="MA">MA</option>
-                            <option value="MT">MT</option>
-                            <option value="MS">MS</option>
-                            <option value="MG">MG</option>
-                            <option value="PA">PA</option>
-                            <option value="PB">PB</option>
-                            <option value="PR">PR</option>
-                            <option value="PE">PE</option>
-                            <option value="PI">PI</option>
-                            <option value="RJ">RJ</option>
-                            <option value="RN">RN</option>
-                            <option value="RS">RS</option>
-                            <option value="RO">RO</option>
-                            <option value="RR">RR</option>
-                            <option value="SC">SC</option>
-                            <option value="SP">SP</option>
-                            <option value="SE">SE</option>
-                            <option value="TO">TO</option>
-                        </select></div>
+
+                <label class="field padding-bottom--24 pp-input-wrap pp-input-md"><span class="pp-label-text">*Estado</span>
+                        <div class="pp-custom-select">
+                            <select name="Estado" id="estado" v-model="customFields.estado" tabindex="0" class=" pp-select"  required>
+                                <option value=""></option>
+                                <option value="AC">AC</option>
+                                <option value="AL">AL</option>
+                                <option value="AP">AP</option>
+                                <option value="AM">AM</option>
+                                <option value="BA">BA</option>
+                                <option value="CE">CE</option>
+                                <option value="DF">DF</option>
+                                <option value="ES">ES</option>
+                                <option value="GO">GO</option>
+                                <option value="MA">MA</option>
+                                <option value="MT">MT</option>
+                                <option value="MS">MS</option>
+                                <option value="MG">MG</option>
+                                <option value="PA">PA</option>
+                                <option value="PB">PB</option>
+                                <option value="PR">PR</option>
+                                <option value="PE">PE</option>
+                                <option value="PI">PI</option>
+                                <option value="RJ">RJ</option>
+                                <option value="RN">RN</option>
+                                <option value="RS">RS</option>
+                                <option value="RO">RO</option>
+                                <option value="RR">RR</option>
+                                <option value="SC">SC</option>
+                                <option value="SP">SP</option>
+                                <option value="SE">SE</option>
+                                <option value="TO">TO</option>
+                            </select>
+                        </div>
                 </label>
                 <label class="field padding-bottom--24 pp-input-wrap pp-input-md">
-                    <span class="pp-label-text">*Cidade</span><input name="Cidade" placeholder="São Paulo"  id="cidade" v-model="customFields.cidade" type="text" tabindex="0"
-                        class="pp-input"  required>
+                        <span class="pp-label-text">*Cidade</span>
+                        <input name="Cidade" placeholder="São Paulo"  id="cidade" v-model="customFields.cidade" type="text" tabindex="0"
+                            class="pp-input"  required>
                 </label>
                 <label class="field padding-bottom--24 pp-input-wrap pp-input-md"><span class="pp-label-text">*Área
-                        de atuação</span>
-                    <div class="vv-custom-select">
-                        <v-select :options="options" name="Área de atuacão" class="v-select_ascension" id="rea_de_atua_o" :required="!customFields.rea_de_atua_o" v-model="customFields.rea_de_atua_o"></v-select>
-                    </div>
+                            de atuação</span>
+                        <div class="vv-custom-select">
+                            <v-select :options="options" name="Área de atuacão" class="v-select_ascension" id="rea_de_atua_o" :required="!customFields.rea_de_atua_o" v-model="customFields.rea_de_atua_o"></v-select>
+                        </div>
                 </label>
                 <div v-if="errors.length">
                     <span>Por favor, revise o(s) campo(s):</span>
-                    <div style=""><span v-for="error in errors">{{ error.name}}, </div>
-                </div>  
+                    <span v-for="error in errors">{{ error.name}}, </span>
+                </div>
+
+                <div class="field padding-bottom--24">
+                    <button class="submitAscension-form" @click.prevent="checkForm()" name="submit">
+                                {{button_text}}
+                                &nbsp;
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                </svg>
+                            </button>
+
+                </div>
+            </form>
         </div>
-    
-        <div class="field padding-bottom--24">
-            <button class="submitAscension-form" @click.prevent="checkForm()"  name="submit">
-                {{button_text}}
-                &nbsp;
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
-                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
-                </svg>
-            </button>
-            
-        </div>
-        </form>
         <div style="display:flex;">
             <p>Suas informações estão seguras.</p>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi
@@ -89,4 +96,4 @@
 
         </div>
     </div>
-    </div>
+</div>
