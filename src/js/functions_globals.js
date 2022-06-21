@@ -1,9 +1,21 @@
 export async function loadHTML(path) {
-    var html = "";
-    await fetch(path)
-        .then(response => response.text())
-        .then(text => { html = text; });
-    return html
+    var template = ""
+    await (async() => {
+        var response = await fetch(path);
+        switch (response.status) {
+            // status "OK"
+            case 200:
+                template = await response.text();
+
+                console.log(template);
+                break;
+                // status "Not Found"
+            case 404:
+                console.log('Not Found');
+                break;
+        }
+    })();
+    //return template;
 }
 
 export function validForm() {

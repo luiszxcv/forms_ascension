@@ -1,7 +1,7 @@
-<div class="formbg-outer-ascension">
+export const form_markse_marcas = `<div class="formbg-outer-ascension">
     <div class="formbg">
         <div class="formbg-inner">
-            <h4 class="">{{headline}}</h4>
+            <h3 class="headline_form_ascension">{{headline}}</h3>
             <form id="form_ascension_submit" method="POST" ref="form_ascension_submit" @submit="checkForm()" action="#">
                 <label class="field padding-bottom--24 pp-input-wrap pp-error pp-input-md">
                         <span class="pp-label-text">*Seu nome</span>
@@ -98,3 +98,4 @@
         </div>
     </div>
 </div>
+`;

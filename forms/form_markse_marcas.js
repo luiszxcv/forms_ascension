@@ -1,77 +1,77 @@
 import { checkForm, send, telefone, validForm, loadHTML } from '/src/js/functions_globals.js';
 import { options_markse } from '/src/js/variables.js';
-var form = "";
-await loadHTML("https://forms.ascensiondigital.com.br/src/forms/markse_marcas.html").then(res => {
-    form = res;
-});
+import { form_markse_marcas } from '/src/js/forms.js';
+
+var form = form_markse_marcas;
+//form = await loadHTML("https://forms.ascensiondigital.com.br/src/forms/markse_marcas.html")
 
 Vue.component('v-select', VueSelect.VueSelect);
 
 Vue.component('form-ascension', {
-        props: ['button_text', "redirect_url", "formid", "headline"],
-        data: function() {
-            return {
-                form: form,
-                options: options_markse,
-                customFields: {},
-                errors: [],
-                validForm: validForm,
-                send: send,
-                telefone: telefone,
-                checkForm: checkForm,
-            }
-        },
-        methods: {},
-        mounted() {
+    props: ['button_text', "redirect_url", "formid", "headline"],
+    data: function() {
+        return {
+            form: form,
+            options: options_markse,
+            customFields: {},
+            errors: [],
+            validForm: validForm,
+            send: send,
+            telefone: telefone,
+            checkForm: checkForm,
+        }
+    },
+    methods: {},
+    mounted() {
 
-        },
-        watch: {
-            customFields: {
-                handler(val) {
-                    if (val.telefone) {
-                        val.telefone = this.telefone(val.telefone);
-                    }
-                },
-                deep: true
-            }
-        },
-        template: `
+    },
+    watch: {
+        customFields: {
+            handler(val) {
+                if (val.telefone) {
+                    val.telefone = this.telefone(val.telefone);
+                }
+            },
+            deep: true
+        }
+    },
+    template: `
         <div>
             <div id="html-form-ascension" >
             ` + form + `
             </div>
         </div>`
-    })
-    /*
-    Vue.component('modal-ascension', {
-        props: ['button_text', "redirect_url", "formid", "headline"],
-        data: function() {
-            return {
-                form: form,
-                options: options_markse,
-                customFields: {},
-                errors: [],
-                validForm: validForm,
-                send: send,
-                telefone: telefone,
-                checkForm: checkForm,
-            }
-        },
-        methods: {},
-        mounted() {
+})
 
-        },
-        watch: {
-            customFields: {
-                handler(val) {
-                    if (val.telefone) {
-                        val.telefone = this.telefone(val.telefone);
-                    }
-                },
-                deep: true
-            }
-        },
-        template: `
+Vue.component('modal-ascension', {
+    props: ['button_text', "redirect_url", "formid", "headline"],
+    data: function() {
+        return {
+            form: form,
+            options: options_markse,
+            customFields: {},
+            errors: [],
+            validForm: validForm,
+            send: send,
+            telefone: telefone,
+            checkForm: checkForm,
+        }
+    },
+    methods: {},
+    mounted() {
+
+    },
+    watch: {
+        customFields: {
+            handler(val) {
+                if (val.telefone) {
+                    val.telefone = this.telefone(val.telefone);
+                }
+            },
+            deep: true
+        }
+    },
+    template: `
         <div>
           <div class="section_form_ascension">
             <input class="modal_form_ascension-btn" type="checkbox" id="modal_form_ascension-btn" name="modal_form_ascension-btn"/>
@@ -85,16 +85,16 @@ Vue.component('form-ascension', {
     	    </div>
         </div>
       `
-    })
+})
 
-    Vue.component('modal-form-ascension', {
-        props: ['button_text'],
-        data: function() {
-            return {}
-        },
-        mounted() {},
-        watch: {},
-        template: `
+Vue.component('modal-form-ascension', {
+    props: ['button_text'],
+    data: function() {
+        return {}
+    },
+    mounted() {},
+    watch: {},
+    template: `
         <div>
           <div class="section_form_ascension">
           	<input class="modal_form_ascension-btn" type="checkbox" id="modal_form_ascension-btn" name="modal_form_ascension-btn"/>
@@ -107,18 +107,18 @@ Vue.component('form-ascension', {
     	    </div>
         </div>
         `
-    })
+})
 
-    Vue.component('modal-fixed-modal-ascension', {
-        data: function() {
-            return {}
-        },
-        methods: {},
-        mounted() {
+Vue.component('modal-fixed-modal-ascension', {
+    data: function() {
+        return {}
+    },
+    methods: {},
+    mounted() {
 
-        },
-        watch: {},
-        template: `
+    },
+    watch: {},
+    template: `
         <div>
           <div class="section_form_ascension">
           	<input style=""class="modal_form_ascension-btn" type="checkbox" id="modal_form_ascension-btn" name="modal_form_ascension-btn"/>
@@ -126,9 +126,25 @@ Vue.component('form-ascension', {
     	    </div>
         </div>
       `
-    });
-    */
-new Vue({
-    el: '#form_markse_marcas',
-    data: {}
-})
+});
+
+if (document.getElementById("form_markse_marcas")) {
+    new Vue({
+        el: '#form_markse_marcas',
+        data: {}
+    })
+}
+
+if (document.getElementById("button_form_markse_marcas")) {
+    new Vue({
+        el: '#button_form_markse_marcas',
+        data: {}
+    })
+}
+
+if (document.getElementById("fixed_form_markse_marcas")) {
+    new Vue({
+        el: '#fixed_form_markse_marcas',
+        data: {}
+    })
+}
