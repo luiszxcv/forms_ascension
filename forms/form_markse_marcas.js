@@ -109,6 +109,7 @@ Vue.component('modal-form-ascension', {
     `
 })
 
+
 Vue.component('modal-fixed-modal-ascension', {
     data: function() {
         return {}
@@ -128,17 +129,27 @@ Vue.component('modal-fixed-modal-ascension', {
   `
 });
 
-new Vue({
-    el: '#form_markse_marcas',
-    data: {}
-})
-
-new Vue({
-    el: '#button_form_markse_marcas',
-    data: {}
-})
-
-new Vue({
-    el: '#fixed_form_markse_marcas',
-    data: {}
-})
+try {
+    new Vue({
+        el: '#form_markse_marcas',
+        data: {}
+    })
+} catch {
+    console.log("form não localizado")
+}
+try {
+    new Vue({
+        el: '#button_form_markse_marcas',
+        data: {}
+    })
+} catch {
+    console.log("button não localizado")
+}
+try {
+    new Vue({
+        el: '#fixed_form_markse_marcas',
+        data: {}
+    })
+} catch {
+    console.log("fixed não localizado")
+}
