@@ -129,20 +129,9 @@ Vue.component('modal-fixed-modal-ascension', {
   `
 });
 
-
-try {
+if (document.getElementById("form_markse_marcas")) {
     new Vue({
-        el: '#button_form_markse_marcas',
+        el: '#form_markse_marcas',
         data: {}
     })
-} catch {
-    console.log("button não localizado")
-}
-try {
-    new Vue({
-        el: '#fixed_form_markse_marcas',
-        data: {}
-    })
-} catch {
-    console.log("fixed não localizado")
 }
