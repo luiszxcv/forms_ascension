@@ -27,7 +27,7 @@ export function validForm() {
         telefone: value => ((value && value.length == 15 && value != "") ? true : false),
         estado: value => ((value && value.length > 0 && value != "") ? true : false),
         cidade: value => ((value && value.length > 0 && value != "") ? true : false),
-        rea_de_atua_o: value => ((value && value.value && value.value.length > 0) ? true : false),
+        ramo_de_atividade: value => ((value && value.length > 0 && value != "") ? true : false),
         //age: value => parseInt(value) === Number(value) && value >= 18,
     };
 
@@ -80,7 +80,7 @@ export async function send() {
         {fieldId: \"telefone\", fieldValue: \"${this.customFields.telefone}\"},\r\n            
         {fieldId: \"estado\", fieldValue: \"${this.customFields.estado}\"},\r\n            
         {fieldId: \"cidade\", fieldValue: \"${this.customFields.cidade}\"},\r\n            
-        {fieldId: \"rea_de_atua_o\", fieldValue: \"${this.customFields.rea_de_atua_o.label}\"},\r\n    ]\r\n  }) 
+        {fieldId: \"ramo_de_atividade\", fieldValue: \"${this.customFields.ramo_de_atividade}\"},\r\n    ]\r\n  }) 
         {\r\n    repoItem {\r\n      id\r\n      title\r\n    }\r\n  }\r\n}`,
         variables: {}
     })

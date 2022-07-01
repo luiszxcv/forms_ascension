@@ -65,11 +65,15 @@ export const form_markse_marcas = `<div class="formbg-outer-ascension">
                         <input name="Cidade" placeholder="São Paulo"  id="cidade" v-model="customFields.cidade" type="text" tabindex="0"
                             class="pp-input"  required>
                 </label>
-                <label class="field padding-bottom--24 pp-input-wrap pp-input-md"><span class="pp-label-text">*Área
+                <!--<label class="field padding-bottom--24 pp-input-wrap pp-input-md"><span class="pp-label-text">*Área
                             de atuação</span>
                         <div class="vv-custom-select">
-                            <v-select :options="options" name="Área de atuacão" class="v-select_ascension" id="rea_de_atua_o" :required="!customFields.rea_de_atua_o" v-model="customFields.rea_de_atua_o"></v-select>
+                            <v-select :options="options" name="Área de atuacão" class="v-select_ascension" id="ramo_de_atividade" :required="!customFields.ramo_de_atividade" v-model="customFields.ramo_de_atividade"></v-select>
                         </div>
+                </label>-->
+
+                <label class="field padding-bottom--24 pp-input-wrap pp-input-md"><span class="pp-label-text">*Área de atuacão</span>
+                        <input name="Ramo de atividade" placeholder="Ex: Empresa de consultoria"  id="ramo_de_atividade"   v-model="customFields.ramo_de_atividade" type="text" tabindex="0" class="pp-input"  required>
                 </label>
                 <div v-if="errors.length">
                     <span>Por favor, revise o(s) campo(s):</span>
