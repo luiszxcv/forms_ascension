@@ -73,7 +73,8 @@ export async function send() {
     myHeaders.append("Content-Type", "application/json");
 
     var graphql = JSON.stringify({
-        query: `mutation {\r\n  submitPublicForm(input: {\r\n    formId: \"${this.formid}\",\r\n    
+        query: `mutation {\r\n  submitPublicForm(input: {\r\n    formId: \"${this.formid}\",\r\n   
+        title: \"${this.customFields.nome_da_empresa}\",\r\n  
         filledFields: [\r\n      {fieldId: \"nome_do_contato\", fieldValue: \"${this.customFields.nome_do_contato}\"},\r\n            
         {fieldId: \"nome_da_empresa\", fieldValue: \"${this.customFields.nome_da_empresa}\"},\r\n            
         {fieldId: \"email\", fieldValue: \"${this.customFields.email}\"},\r\n            
